@@ -3,10 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".ui.auth.login.LoginFragment">
+    android:orientation="vertical"
+    tools:context=".ui.auth.register.RegisterFragment">
+
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <EditText
+        android:id="@+id/edit_2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <EditText
+        android:id="@+id/edit_3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
 
     <EditText
         android:id="@+id/edit_4"
