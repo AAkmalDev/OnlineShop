@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/registerFragment">
+    app:startDestination="@id/shopFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -15,4 +15,39 @@
         android:name="uz.koinot.onlineshop.ui.auth.register.RegisterFragment"
         android:label="fragment_register"
         tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="uz.koinot.onlineshop.ui.auth.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="uz.koinot.onlineshop.ui.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="uz.koinot.onlineshop.ui.basket.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="uz.koinot.onlineshop.ui.account.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="uz.koinot.onlineshop.ui.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="uz.koinot.onlineshop.ui.categoyr.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="uz.koinot.onlineshop.ui.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
 </navigation>

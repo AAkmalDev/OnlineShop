@@ -1,5 +1,6 @@
 package uz.koinot.onlineshop.ui.auth.register
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.gson.Gson
@@ -24,10 +25,10 @@ class RegisterViewModel @Inject constructor(
 
     fun register(user: User) = viewModelScope.launch {
         _registerFlow.value = UiStateObject.LOADING
-        val userJson = Gson().toJson(user)
+
         try {
-            val data = repository.userRegister(userJson)
-            if (data?.message == "") {
+            val data = repository.userRegister(user)
+            if (data?.message == "Saved User") {
                 _registerFlow.value = UiStateObject.SUCCESS(data.message)
                 storage.accessToken = data.`object`!!
             } else {
